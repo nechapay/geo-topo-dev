@@ -197,36 +197,16 @@ const questions = ref([
   }
 ])
 
-// watch(
-//   questions,
-//   () => {
-//     if (swiperInstance) {
-//       swiperInstance.update() // Update Swiper after items change
-//     }
-//   },
-//   { deep: true }
-// )
-
 function handleRadio(val) {
   disableQuestion(val.target.id)
   score.value += +selected.value[getIndex()].points
-  console.log('score ', score.value)
 }
 
 function disableQuestion(id) {
   questions.value[getIndex()].disabled = true
-  // questions.value.forEach((item, index) => {
-  //   item.opt[0].forEach((opt) => {
-  //     if (opt.id == id) {
-
-  //       return
-  //     }
-  //   })
-  // })
 }
 
 const getRadioOptionClass = (value) => {
-  console.log('index', getIndex())
   return {
     'radio-correct': selected.value[getIndex()].status,
     'radio-incorrect': selected.value[getIndex()].status === false

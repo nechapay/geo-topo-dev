@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Navigation } from 'swiper/modules'
 
 import Task4 from './Task4.vue'
+import Task6 from './Task6.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -42,14 +43,14 @@ const blocks = ref([
   },
   {
     id: 5,
-    name: 'Block5',
+    name: 'Условные знаки',
     subname: 'теория',
     active: false,
     action: showBlock
   },
   {
     id: 6,
-    name: 'Block6',
+    name: 'Условные знаки',
     subname: 'практика',
     active: false,
     action: showBlock
@@ -101,9 +102,7 @@ function showBlock(block) {
       <div v-else-if="blockVisibility[4]">
         {{ blocks[caption].name }}
       </div>
-      <div v-else-if="blockVisibility[5]">
-        {{ blocks[caption].name }}
-      </div>
+      <task6 v-else-if="blockVisibility[5]" />
     </div>
   </div>
 </template>
