@@ -369,7 +369,7 @@ label span:before {
 
 @media screen and (min-width: 1800px) {
   .swiper {
-    width: 1400px;
+    width: 1600px;
     height: 100%;
     padding: 1% 0;
   }

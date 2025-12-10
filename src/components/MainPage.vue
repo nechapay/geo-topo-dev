@@ -1,28 +1,27 @@
 <script setup>
 import { computed, ref, reactive, watch, onMounted } from 'vue'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination, Navigation } from 'swiper/modules'
 
+import MapCanvas from './MapCanvas.vue'
+
+import Task1 from './Task1.vue'
+import Task3 from './Task3.vue'
 import Task4 from './Task4.vue'
+import Task5 from './Task5.vue'
 import Task6 from './Task6.vue'
-
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
 const emits = defineEmits(['ended'])
 
 const blocks = ref([
   {
     id: 1,
-    name: 'Block1',
+    name: 'Карта',
     subname: 'теория',
     active: true,
     action: showBlock
   },
   {
     id: 2,
-    name: 'Block2',
+    name: 'Карта',
     subname: 'практика',
     active: false,
     action: showBlock
@@ -89,19 +88,23 @@ function showBlock(block) {
       </div>
     </div>
     <div class="page-body fill">
-      <div v-if="blockVisibility[0]">
-        {{ blocks[caption].name }}
+      <div v-if="blockVisibility[0]" class="base-flex flex-column">
+        <map-canvas
+          image-url="img\1001.jpg"
+          :width="400"
+          :height="400"
+          :min-zoom="0.1"
+          :max-zoom="2"
+          :zoom-step="0.1"
+        />
+        <task1 />
       </div>
       <div v-else-if="blockVisibility[1]">
         {{ blocks[caption].name }}
       </div>
-      <div v-else-if="blockVisibility[2]">
-        {{ blocks[caption].name }}
-      </div>
+      <task3 v-else-if="blockVisibility[2]" />
       <task4 v-else-if="blockVisibility[3]" />
-      <div v-else-if="blockVisibility[4]">
-        {{ blocks[caption].name }}
-      </div>
+      <task5 v-else-if="blockVisibility[4]" />
       <task6 v-else-if="blockVisibility[5]" />
     </div>
   </div>

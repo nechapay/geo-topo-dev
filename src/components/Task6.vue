@@ -830,6 +830,7 @@ function getIndex() {
 
 .radio-group {
   max-width: 95%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   padding: 1%;
