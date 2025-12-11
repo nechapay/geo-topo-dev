@@ -88,11 +88,11 @@ function showBlock(block) {
       </div>
     </div>
     <div class="page-body fill">
-      <div v-if="blockVisibility[0]" class="base-flex flex-column">
+      <div v-if="blockVisibility[0]" class="base-flex fill">
         <map-canvas
           image-url="img\1001.jpg"
-          :width="400"
-          :height="400"
+          :width="500"
+          :height="600"
           :min-zoom="0.1"
           :max-zoom="2"
           :zoom-step="0.1"

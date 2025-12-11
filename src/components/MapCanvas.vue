@@ -56,7 +56,7 @@ const lastMousePos = ref({ x: 0, y: 0 })
 const viewport = ref({
   x: 0,
   y: 0,
-  zoom: 0.1
+  zoom: 0.15
 })
 
 const zoom = computed(() => viewport.value.zoom)
@@ -163,7 +163,7 @@ const resetView = () => {
   viewport.value = {
     x: 0,
     y: 0,
-    zoom: 0.1
+    zoom: 0.15
   }
   centerImage()
 }

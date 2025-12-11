@@ -294,7 +294,7 @@ function getIndex() {
 
 .question-image img {
   max-width: 90%;
-  height: 300px;
+  height: 250px;
 }
 
 .radio-group {
