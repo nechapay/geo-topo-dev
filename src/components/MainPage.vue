@@ -145,7 +145,7 @@ function showBlock(block) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url('/img/bg3.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url('/img/bg3.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
