@@ -45,6 +45,10 @@ const props = defineProps({
   zoomStep: {
     type: Number,
     default: 0.1
+  },
+  zoom: {
+    type: Number,
+    default: 0.15
   }
 })
 
@@ -56,13 +60,14 @@ const lastMousePos = ref({ x: 0, y: 0 })
 const viewport = ref({
   x: 0,
   y: 0,
-  zoom: 0.15
+  zoom: props.zoom
 })
 
 const zoom = computed(() => viewport.value.zoom)
 const position = computed(() => ({ x: viewport.value.x, y: viewport.value.y }))
 
 onMounted(() => {
+  viewport.value.zoom = props.zoom
   loadImage()
 })
 
@@ -163,7 +168,7 @@ const resetView = () => {
   viewport.value = {
     x: 0,
     y: 0,
-    zoom: 0.15
+    zoom: props.zoom
   }
   centerImage()
 }

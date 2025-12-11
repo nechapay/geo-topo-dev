@@ -97,6 +97,7 @@ function showBlock(block) {
           :min-zoom="0.1"
           :max-zoom="2"
           :zoom-step="0.1"
+          :zoom="0.15"
         />
         <task1 />
       </div>
