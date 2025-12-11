@@ -4,6 +4,7 @@ import { computed, ref, reactive, watch, onMounted } from 'vue'
 import MapCanvas from './MapCanvas.vue'
 
 import Task1 from './Task1.vue'
+import Task2 from './Task2.vue'
 import Task3 from './Task3.vue'
 import Task4 from './Task4.vue'
 import Task5 from './Task5.vue'
@@ -99,9 +100,7 @@ function showBlock(block) {
         />
         <task1 />
       </div>
-      <div v-else-if="blockVisibility[1]">
-        {{ blocks[caption].name }}
-      </div>
+      <task2 v-else-if="blockVisibility[1]" />
       <task3 v-else-if="blockVisibility[2]" />
       <task4 v-else-if="blockVisibility[3]" />
       <task5 v-else-if="blockVisibility[4]" />

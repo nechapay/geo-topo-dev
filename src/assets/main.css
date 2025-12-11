@@ -103,20 +103,22 @@
 .my-button {
   border-width: 1px;
   border-style: solid;
-  border-color: #fb9d23;
+  border-color: #239afb;
   background: white;
   font-size: 100%;
   transition-duration: 0.5s;
   cursor: pointer;
   outline: none;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 1px 1px 8px grey;
   min-width: 125px;
   padding: 8px 0;
   margin: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .my-button:hover {
-  background: #fb9d23;
+  background: #239afb;
   color: white;
   box-shadow: none;
 }
