@@ -43,13 +43,6 @@ const questions = ref([
     redText: '',
     img: '5002.jpg',
     disabled: false
-  },
-  {
-    id: 5004,
-    text: '',
-    redText: '',
-    img: '5003.jpg',
-    disabled: false
   }
 ])
 </script>
