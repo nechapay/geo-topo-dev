@@ -60,7 +60,7 @@ const questions = ref([
       :modules="modules"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"
@@ -108,7 +108,7 @@ const questions = ref([
 
 .question-image img {
   max-width: 90%;
-  height: 600px;
+  height: 550px;
 }
 
 @media screen and (min-width: 1800px) {
@@ -119,7 +119,7 @@ const questions = ref([
   }
 
   .question-image img {
-    height: 500px;
+    height: 800px;
   }
 }
 </style>

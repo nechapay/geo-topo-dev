@@ -449,7 +449,7 @@ function getIndex() {
       :allow-touch-move="false"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"
@@ -596,6 +596,22 @@ input:focus {
     width: 1600px;
     height: 100%;
     padding: 1% 0;
+  }
+
+  .question-text {
+    font-weight: bolder;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 150%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .my-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    justify-content: center;
   }
 }
 </style>

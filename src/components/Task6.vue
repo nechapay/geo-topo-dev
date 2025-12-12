@@ -761,7 +761,7 @@ function getIndex() {
       :modules="modules"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"

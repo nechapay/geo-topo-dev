@@ -82,7 +82,7 @@ const questions = ref([
       :modules="modules"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"
@@ -478,13 +478,17 @@ li {
 
 @media screen and (min-width: 1800px) {
   .swiper {
-    width: 1600px;
+    width: 1100px;
     height: 100%;
     padding: 1% 0;
   }
 
   .question-image img {
     height: 500px;
+  }
+
+  .slide-text {
+    font-size: 120%;
   }
 }
 </style>

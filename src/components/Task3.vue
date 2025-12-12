@@ -82,7 +82,7 @@ const questions = ref([
       :modules="modules"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"
@@ -142,7 +142,7 @@ const questions = ref([
   }
 
   .question-image img {
-    height: 500px;
+    height: 600px;
   }
 }
 </style>

@@ -172,7 +172,7 @@ const questions = ref([
     id: 4005,
     text: 'ОПРЕДЕЛИТЬ МАСШТАБ ТОПОГРАФИЧЕСКОЙ КАРТЫ ПО РАССТОЯНИЯМ МЕЖДУ МЕСТНЫМИ ОБЪЕКТАМИ',
     redText: 'РАССТОЯНИЕ МЕЖДУ ЗНАКАМИ ПО КАРТЕ 2 СМ. СТОРОНА КВАДРАТА 2 СМ.',
-    img: '4005.png',
+    img: '4005.jpg',
     disabled: false,
     opt: [
       {
@@ -230,7 +230,7 @@ function getIndex() {
       :modules="modules"
       :slides-per-view="1.1"
       :loop="false"
-      :space-between="80"
+      :space-between="100"
       :centered-slides="true"
       :pagination="true"
       @swiper="onSwiper"
